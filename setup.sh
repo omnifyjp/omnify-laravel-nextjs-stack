@@ -13,8 +13,13 @@ echo "Stack: Laravel + Next.js"
 echo "Project: $PROJECT_NAME"
 echo ""
 
-# Step 1: Create Laravel backend
-echo "Step 1: Create backend"
+# Step 1: Install dependencies
+echo "Step 1: Install dependencies"
+npm install
+echo "✓ npm dependencies"
+
+# Step 2: Create Laravel backend
+echo "Step 2: Create backend"
 if [ ! -d "backend" ]; then
     laravel new backend --no-interaction
     cd backend
@@ -129,9 +134,9 @@ else
     cd backend
 fi
 
-# Step 2: Setup backend environment
+# Step 3: Setup backend environment
 echo ""
-echo "Step 2: Setup environment"
+echo "Step 3: Setup environment"
 cat > .env << EOF
 APP_NAME=Service
 APP_KEY=
