@@ -1,7 +1,5 @@
 {
-  "name": "@omnify/laravel-nextjs-stack",
+  "name": "@omnify/laravel-nextjs-stack-boilerplate",
   "private": true,
-  "devDependencies": {
-    "@famgia/omnify-core-cli": "^2.0.0"
-  }
+  "devDependencies": {}
 }
